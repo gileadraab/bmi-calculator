@@ -1,0 +1,23 @@
+There are two recommended ways to store your API key for `aider` so you don't have to define it in every project:
+
+1.  **Environment Variable (Most Common Method)**
+
+    You can set the `OPENAI_API_KEY` environment variable in your shell's configuration file. For `zsh`, you would add the following line to your `~/.zshrc` or `~/.zshenv` file:
+
+    ```sh
+    export OPENAI_API_KEY="your-api-key-here"
+    ```
+
+    After adding this line, you'll need to restart your shell or source the file (e.g., `source ~/.zshrc`). Aider, along with many other tools, will automatically detect and use this key.
+
+2.  **Aider Configuration File**
+
+    Aider also supports a user-level configuration file at `~/.aider.conf.yml`. You can create this file if it doesn't exist and specify your key like this:
+
+    ```yaml
+    openai-api-key: your-api-key-here
+    ```
+
+    This method is specific to `aider` and is a good alternative if you prefer not to set a system-wide environment variable.
+
+Both methods are secure and prevent you from having to expose your key in project-specific files or command-line history.
