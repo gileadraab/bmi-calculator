@@ -21,3 +21,17 @@ There are two recommended ways to store your API key for `aider` so you don't ha
     This method is specific to `aider` and is a good alternative if you prefer not to set a system-wide environment variable.
 
 Both methods are secure and prevent you from having to expose your key in project-specific files or command-line history.
+
+3.  **Using `direnv` for Global Configuration**
+
+    `direnv` is an excellent tool for managing environment variables. For a global setup that avoids defining the key in each project, you can use `direnv`'s global configuration file.
+
+    Create or edit the file `~/.config/direnv/direnvrc` and add:
+
+    ```sh
+    export OPENAI_API_KEY="your-api-key-here"
+    ```
+
+    This file is loaded by `direnv` for any directory it manages, making the key available globally without needing to add it to each project's `.envrc`.
+
+    Your suggestion of using a file like `~/.env/.envrc` also works. You would need to `direnv allow` that directory, and then source it from your project `.envrc` files (e.g., with `source_env ~/.env/.envrc`). For a truly global variable, using `~/.config/direnv/direnvrc` is the more direct `direnv` approach.
