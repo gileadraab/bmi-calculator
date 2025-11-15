@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="app_subtitle">Calculate your Body Mass Index and health category</string>
+
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="height_m">Height (m)</string>
+
+    <string name="unit_cm">cm</string>
+    <string name="unit_m">m</string>
+
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="clear">Clear</string>
+
+    <string name="your_bmi_result">Your BMI Result</string>
+
+    <string name="underweight">Underweight</string>
+    <string name="normal_weight">Normal Weight</string>
+    <string name="overweight">Overweight</string>
+    <string name="obesity_class_1">Obesity Class I</string>
+    <string name="obesity_class_2">Obesity Class II</string>
+    <string name="obesity_class_3">Obesity Class III</string>
+
+    <string name="bmi_less_than_18_5">BMI less than 18.5</string>
+    <string name="bmi_18_5_24_9">BMI 18.5 - 24.9</string>
+    <string name="bmi_25_0_29_9">BMI 25.0 - 29.9</string>
+    <string name="bmi_30_0_34_9">BMI 30.0 - 34.9</string>
+    <string name="bmi_35_0_39_9">BMI 35.0 - 39.9</string>
+    <string name="bmi_40_and_above">BMI 40.0 and above</string>
+
+    <string name="bmi_categories">BMI Categories</string>
+    <string name="category_underweight">Underweight                       &lt; 18.5</string>
+    <string name="category_normal">Normal weight                     18.5 - 24.9</string>
+    <string name="category_overweight">Overweight                        25.0 - 29.9</string>
+    <string name="category_obesity_1">Obesity Class I                   30.0 - 34.9</string>
+    <string name="category_obesity_2">Obesity Class II                  35.0 - 39.9</string>
+    <string name="category_obesity_3">Obesity Class III                 ≥ 40.0</string>
+
+    <string name="disclaimer">BMI is a screening tool and not a diagnostic tool.\nConsult healthcare professionals for medical advice.</string>
+
+    <string name="bmi_calculated">BMI Calculated: %1$.1f (%2$s)</string>
+    <string name="inputs_cleared">All fields have been reset</string>
+
+    <string name="calculator_icon">Calculator Icon</string>
+</resources>
